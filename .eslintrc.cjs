@@ -5,8 +5,10 @@ module.exports = {
     es2021: true,
     node: true
   },
+  parser: '@typescript-eslint/parser',
   extends: [
     'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime'
   ],
@@ -18,6 +20,7 @@ module.exports = {
     }
   },
   plugins: [
+    '@typescript-eslint',
     'react'
   ],
   settings: {
